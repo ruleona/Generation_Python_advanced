@@ -75,3 +75,43 @@
 # for i in range(n):
 #     sum += int(matrix[i][i])
 # print(sum)
+
+# #         Максимальный в области 2 🌶️
+# n = int(input())
+# matrix = [[int(i) for i in input().split()] for _ in range(n)]
+# max = -100    # взято число -100, так как в тестах есть отрицательные числа
+# for i in range(n):
+#     for j in range(n):
+#         if (i >= j and i <= n - 1 - j) or (i <= j and i >= n - 1 - j):
+#             if matrix[i][j] > max:
+#                 max = matrix[i][j]
+# print(max)
+
+# #           Суммы четвертей (решение курильщика)
+# n = int(input())
+# matrix = [[int(i) for i in input().split()] for _ in range(n)]
+# count_1, count_2, count_3, count_4 = 0, 0, 0, 0
+# for i in range(n):
+#     for j in range(n):
+#         if i < j:
+#             if i < n - 1 - j:
+#                 count_1 += matrix[i][j]
+#             elif i > n - 1 - j:
+#                 count_2 += matrix[i][j]
+#         elif i > j:
+#             if i > n - 1 - j:
+#                 count_3 += matrix[i][j]
+#             elif i < n - 1 - j:
+#                 count_4 += matrix[i][j]
+# print(f'Верхняя четверть: {count_1}')
+# print(f'Правая четверть: {count_2}')
+# print(f'Нижняя четверть: {count_3}')
+# print(f'Левая четверть: {count_4}')
+
+# #              Суммы четвертей (решение здорового человека)
+# n = int(input())
+# matrix = [[int(num) for num in input().split()] for i in range(n)]
+# print(f"Верхняя четверть: {sum(matrix[i][j] for i in range(n) for j in range(n) if i < j and i < n - 1 - j)}")
+# print(f"Правая четверть: {sum(matrix[i][j] for i in range(n) for j in range(n) if j > i > n - 1 - j)}")
+# print(f"Нижняя четверть: {sum(matrix[i][j] for i in range(n) for j in range(n) if i > j and i > n - 1 - j)}")
+# print(f"Левая четверть: {sum(matrix[i][j] for i in range(n) for j in range(n) if j < i < n - 1 - j)}")
