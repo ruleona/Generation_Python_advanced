@@ -56,3 +56,22 @@
 #     temp = [int(num) for num in input().split()]
 #     matrix.append(temp)
 
+
+# #       Создание матрицы с печатью по рядам и по столбцам
+# rows, columns = int(input()), int(input())
+# arr = [[input() for _ in range(columns)] for _ in range(rows)]
+# for row in arr:
+#     print(*row)
+# print()
+# for i in range(columns):
+#     for j in range(rows):
+#         print(arr[j][i], end=' ')
+#     print()
+
+#         Считывание матрицы рядами и сумма главной диагонали
+# n = int(input())
+# matrix = [input().split() for _ in range(n)]
+# sum = 0
+# for i in range(n):
+#     sum += int(matrix[i][i])
+# print(sum)
