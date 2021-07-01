@@ -24,3 +24,18 @@
 #                 flag = False
 #                 break
 
+#                   Обмен столбцов
+# n, m = int(input()), int(input())
+# matrix = [[int(i) for i in input().split()] for _ in range(n)]
+# cols = list(map(int, input().split()))
+# i, j = cols[0], cols[1]
+# res = []
+# for r in range(n):
+#     for c in range(m):
+#         if c == i:
+#             matrix[r][i], matrix[r][j] = matrix[r][j], matrix[r][i]
+# for r in range(n):
+#     for c in range(m):
+#         print(matrix[r][c], end=' ')
+#     print()
+

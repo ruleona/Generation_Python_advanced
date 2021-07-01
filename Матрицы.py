@@ -37,7 +37,7 @@
 #     matrix[i][n-i-1] = 2
 #
 # for r in range(n):                     # выводим матрицу
-#     for c in range(n):
+#     for c in range(m):
 #         print(matrix[r][c], end=' ')
 #     print()
 
