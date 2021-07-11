@@ -73,3 +73,7 @@
 #     matrix[i], matrix[n - i - 1] = matrix[n - i - 1], matrix[i]
 # for i in range(n):
 #     print(*matrix[i])
+
+tuples = [(), (), ('',), ('a', 'b'), (), ('a', 'b', 'c'), (1,), (), (), ('d',), ('', ''), ()]
+non_empty_tuples = [item for item in tuples if len(item) != 0]
+print(non_empty_tuples)
