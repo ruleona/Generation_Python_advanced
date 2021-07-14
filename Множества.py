@@ -33,3 +33,7 @@
 #                            Урок биологии
 # s1, s2, s3 = [set(map(int, input().split())) for _ in range(3)]
 # print(*sorted({10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0} - s3 - s2 - s1))
+
+#
+# files = ['python.png', 'qwerty.py', 'stepik.png', 'beegeek.org', 'windows.pnp', 'pen.txt', 'phone.py', 'book.txT', 'board.pNg', 'keyBoard.jpg', 'Python.PNg', 'apple.jpeg', 'png.png', 'input.tXt', 'split.pop', 'solution.Py', 'stepik.org', 'kotlin.ko', 'github.git']
+# print(*sorted({i for i in {el.lower() for el in files} if i[-4:] == '.png'}))
