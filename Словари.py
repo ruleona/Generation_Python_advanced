@@ -106,3 +106,71 @@
 #     else:
 #         print(f'{char}_{result[char]}', end=' ')
 #     result[char] = result.get(char, 0) + 1
+
+        #Словарь программиста
+# n, dct = int(input()), {}
+# lst1 = [input().split(': ') for _ in range(n)]
+# for el in lst1:
+#     dct[el[0]] = el[1]
+# lst2 = [input().lower() for _ in range(int(input()))]
+# for el in lst2:
+#     print(dct.get(el, 'Не найдено'))
+
+       # Анаграммы
+# dct1, dct2 = {}, {}
+# lst1 = [char for char in input()]
+# for char in lst1:
+#     dct1[char] = dct1.get(char, 0) + 1
+# lst2 = [char for char in input()]
+# for char in lst2:
+#     dct2[char] = dct2.get(char, 0) + 1
+# print('YES' if dct1 == dct2 else 'NO')
+#
+#        Анаграммы 2
+dct1, dct2 = {}, {}
+lst1 = [char for char in input().lower() if char.isalpha()]
+for char in lst1:
+    dct1[char] = dct1.get(char, 0) + 1
+# lst2 = [char for char in input().lower() if char.isalpha()]
+# for char in lst2:
+#     dct2[char] = dct2.get(char, 0) + 1
+# print('YES' if dct1 == dct2 else 'NO')
+#
+#         Словарь синонимов
+# n, dct = int(input()), {}
+# lst1 = [input().split() for _ in range(n)]
+# for el in lst1:
+#     dct[el[0]] = el[1]
+#     dct[el[1]] = el[0]
+# print(dct.get(input()))
+
+#          Страны и города
+# Решение курильщика.
+# n, dct = int(input()), {}
+# for _ in range(n):
+#     lst = input().split()
+#     for i in range(1, len(lst)):
+#         dct[lst[i]] = lst[0]
+# lst2 = [input() for _ in range(int(input()))]
+# for el in lst2:
+#     print(dct.get(el))
+
+# Решение здорового человека:
+# dct = {}
+# for _ in range(int(input())):
+#     a, *b = input().split()
+#     dct.update(dict.fromkeys(b, a))
+# for _ in range(int(input())):
+#     print(dct[input()])
+
+          Телефонная книга
+dct = {}
+for _ in range(int(input())):
+    a, b = input().split()
+    if b in dct:
+        dct[b] = dct[b] + ' ' + a
+    else:
+        dct[b] = a
+for _ in range(int(input())):
+    name = input()
+    print((dct.get(name)) if name in dct else 'абонент не найден')
