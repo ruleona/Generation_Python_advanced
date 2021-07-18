@@ -127,10 +127,10 @@
 # print('YES' if dct1 == dct2 else 'NO')
 #
 #        Анаграммы 2
-dct1, dct2 = {}, {}
-lst1 = [char for char in input().lower() if char.isalpha()]
-for char in lst1:
-    dct1[char] = dct1.get(char, 0) + 1
+# dct1, dct2 = {}, {}
+# lst1 = [char for char in input().lower() if char.isalpha()]
+# for char in lst1:
+#     dct1[char] = dct1.get(char, 0) + 1
 # lst2 = [char for char in input().lower() if char.isalpha()]
 # for char in lst2:
 #     dct2[char] = dct2.get(char, 0) + 1
@@ -163,14 +163,14 @@ for char in lst1:
 # for _ in range(int(input())):
 #     print(dct[input()])
 
-          Телефонная книга
-dct = {}
-for _ in range(int(input())):
-    a, b = input().split()
-    if b in dct:
-        dct[b] = dct[b] + ' ' + a
-    else:
-        dct[b] = a
-for _ in range(int(input())):
-    name = input()
-    print((dct.get(name)) if name in dct else 'абонент не найден')
+#           Телефонная книга
+# dct = {}
+# for _ in range(int(input())):
+#     a, b = input().split()
+#     if b in dct:
+#         dct[b] = dct[b] + ' ' + a
+#     else:
+#         dct[b] = a
+# for _ in range(int(input())):
+#     name = input()
+#     print((dct.get(name)) if name in dct else 'абонент не найден')
