@@ -23,7 +23,7 @@ turtle.shape('square')
 # turtle (черепашка);
 # triangle (треугольник);
 # classic (классическая стрелка)
-При необходимости можно использовать свои рисунки:
+# При необходимости можно использовать свои рисунки:
 turtle.Screen().addshape('rocketship.gif')  # регистрируем изображение
 turtle.shape('rocketship.gif')
 
