@@ -260,4 +260,11 @@
 
 
 
+#                  Тема урока: функции any(), all(), zip(), enumerate()
+#
+# def ignore_command(command):
+#     ignore = ['alias', 'configuration', 'ip', 'sql', 'select', 'update', 'exec', 'del', 'truncate']
+#     return any([bool(word in command) for word in ignore])
+
+
 
