@@ -268,3 +268,60 @@
 
 
 
+
+#
+# countries = ['Russia', 'USA', 'UK', 'Germany', 'France', 'India']
+# capitals = ['Moscow', 'New York', 'London', 'Berlin', 'Paris', 'Delhi']
+# population = [145_934_462, 331_002_651, 80_345_321, 67_886_011, 65_273_511, 1_380_004_385]
+#
+# for item in zip(countries, capitals, population):
+#     print(f'{item[1]} is the capital of {item[0]}, population equal {str(item[2])} people.')
+
+
+
+# abscissas = [float(el) for el in input().split()]
+# ordinates = [float(el) for el in input().split()]
+# applicates = [float(el) for el in input().split()]
+# print(all([bool(el[0] ** 2 + el[1] ** 2 + el[2] ** 2 <= 4) for el in zip(abscissas, ordinates, applicates)]))
+
+
+
+
+# ip = input().split('.')
+# if not all([bool(el.isdigit()) for el in ip]):
+#     print(False)
+# else:
+#     format_ip = [] # удаление нулей. Необходимость действия сомнительна, так как сравнение можно провести и с нулями слева.
+#     for el in ip:
+#         format_ip.append(el[:-1].lstrip('0') + el[-1])
+#     print(all([int(el) < 256 for el in ip]))
+#
+# #Альтернативный вариант:
+# print(all(map(lambda n: n.isdigit() and 0 <= int(n) <= 255, input().split('.'))))
+
+
+
+
+        # Интересные числа
+# a,b = int(input()),int(input())
+# print(*[i for i in range(a, b + 1) if all(int(j) and not i % int(j) for j in str(i))])
+
+
+
+       #Хороший пароль
+# s = input()
+# print('YES' if all((any(i.isupper() for i in s), any(i.islower() for i in s), any(i.isdigit() for i in s), len(s) > 6)
+# ) else 'NO')
+
+
+
+     #Отличники
+# lst = []
+# n = int(input())
+# for _ in range(n):
+#     names = [input() for _ in range(int(input()))]
+#     if any([bool(name[-1] == '5') for name in names]):
+#         lst.append(True)
+#     else:
+#         lst.append(False)
+# print('YES' if all(lst) else 'NO')
