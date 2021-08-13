@@ -77,6 +77,11 @@
 # for ip in ips:
 #     print('.'.join(ip))
 
+
+
+
+
+
 # words = 'the world is mine take a look what you have started'.split()
 #
 # print(*list(map(lambda x: '"' + x + '"', words)))
@@ -124,11 +129,5 @@
 #     operations = {'+': add, '-': sub, '/': truediv, '*': mul}
 #     return operations[operation]
 
-
-
-
-
-
-words = [input() for _ in range(int(input())]
 
 
