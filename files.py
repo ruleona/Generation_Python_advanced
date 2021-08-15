@@ -89,3 +89,74 @@
 #         name, time1, time2 = line.split(', ')
 #         if time_in_minutes(time2) - time_in_minutes(time1) >= 60:
 #             file2.write(f'{name}\n')
+
+
+
+#            Суммарная стоимость
+# with open('ledger.txt', 'r') as file:
+#     content = [int(line.replace('$', '').strip()) for line in file.readlines()]
+#     print(f'${sum(content)}')
+
+
+
+            # Goooood students
+# with open('grades.txt', 'r', encoding='utf-8') as file:
+#     content = [[el.strip() for el in line.split()] for line in file.readlines()]
+#     count = 0
+#     for line in content:
+#         if all([bool(int(el) >= 65) for el in line[1:]]):
+#             count += 1
+#     print(count)
+#
+
+
+
+
+            # Самое длиное слово в файле
+# with open('words.txt', 'r', encoding='utf-8') as file:
+#     content = [word for word in file.read().split()]
+#     max_len = len(max(content, key=len))
+#     print(*filter(lambda x: len(x) == max_len, content), sep='\n')
+
+
+
+
+
+#           Tail of a File
+# with open(input(), 'r', encoding='utf-8') as file:
+#     content = [line.strip() for line in file.readlines()]
+#     if len(content) <= 10:
+#         print(*content, sep='\n')
+#     else:
+#         print(*content[-10:], sep='\n')
+
+
+
+
+                # Транслитерация 🌶️
+# d = { 'а': 'a', 'к': 'k', 'х': 'h', 'б': 'b', 'л': 'l', 'ц': 'c', 'в': 'v', 'м': 'm', 'ч': 'ch', 'г': 'g', 'н': 'n', 'ш': 'sh', 'д': 'd', 'о': 'o', 'щ': 'shh', 'е': 'e', 'п': 'p', 'ъ': '*', 'ё': 'jo', 'р': 'r', 'ы': 'y', 'ж': 'zh', 'с': 's', 'ь': "'", 'з': 'z', 'т': 't', 'э': 'je', 'и': 'i', 'у': 'u', 'ю': 'ju', 'й': 'j', 'ф': 'f', 'я': 'ya', 'А': 'A', 'К': 'K', 'Х': 'H', 'Б': 'B', 'Л': 'L', 'Ц': 'C', 'В': 'V', 'М': 'M', 'Ч': 'Ch', 'Г': 'G', 'Н': 'N', 'Ш': 'Sh', 'Д': 'D', 'О': 'O', 'Щ': 'Shh', 'Е': 'E', 'П': 'P', 'Ъ': '*', 'Ё': 'Jo', 'Р': 'R', 'Ы': 'Y', 'Ж': 'Zh', 'С': 'S', 'Ь': "'", 'З': 'Z', 'Т': 'T', 'Э': 'Je', 'И': 'I', 'У': 'U', 'Ю': 'Ju', 'Й': 'J', 'Ф': 'F', 'Я': 'Ya' }
+#
+# with open('cyrillic.txt', 'r', encoding='utf-8') as file1, open('transliteration.txt', 'w', encoding='utf-8') as file2:
+#     content = file1.read()
+#     for char in content:
+#         if char in d:
+#             file2.write(d[char])
+#         else:
+#             file2.write(char)
+
+
+
+#             Пропущенные комменты 🌶️
+# with open(input(), 'r') as file:
+#     content = file.readlines()
+#     without_name = []
+#     for i in range(len(content)):
+#         if content[i].startswith('def'):
+#             if content[i - 1].startswith('#'):
+#                 continue
+#             else:
+#                 without_name.append(content[i][4: content[i].index('(')])
+#     if without_name:
+#         print(*without_name, sep='\n')
+#     else:
+#         print('Best Programming Team')
